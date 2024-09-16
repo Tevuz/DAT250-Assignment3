@@ -35,12 +35,10 @@ Content-Type: application/json
   "author_username": "User1",
   "voteOptions": [
     {
-      "caption": "A",
-      "votes": [""]
+      "caption": "A"
     },
     {
-      "caption": "B",
-      "votes": [""]
+      "caption": "B"
     }
   ]
 }
@@ -58,11 +56,9 @@ Content-Type: application/json
 
 {
   "username": "User2",
-  "voteOptions": [
-    {
+  "voteOption": {
       "id": 2
     }
-  ]
 }
 
 > {% client.test("User2 votes on poll", function () { client.assert(response.status === 201, "vote was not created") }) %}
@@ -75,11 +71,9 @@ Content-Type: application/json
 
 {
   "username": "User2",
-  "voteOptions": [
-    {
+  "voteOption": {
       "id": 1
     }
-  ]
 }
 
 > {% client.test("User2 votes on poll", function () { client.assert(response.status === 200, "vote was not created") }) %}
