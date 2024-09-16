@@ -1,8 +1,6 @@
 # DAT250: Software Technology Experiment Assignment 3
 ## Singl Page Application
 
----
-
 ## Project specification
 
 Frontend application built with [Svelte](https://svelte.dev/) and using the API made in [Experiment Assignment 2](https://github.com/Tevuz/DAT250-Assignment2/blob/main/dat250-expass2.md).
